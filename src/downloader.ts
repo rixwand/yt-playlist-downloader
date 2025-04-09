@@ -3,7 +3,6 @@ import path from 'node:path'
 import * as fs from "node:fs";
 import ffmpeg from 'fluent-ffmpeg'
 import * as readline from "node:readline";
-import {deprecate} from "node:util";
 
 const downloadVideo = async (agent: Agent, url: string, outputDir: string) => {
   return new Promise<void>( async (resolve, reject) => {

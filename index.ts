@@ -4,7 +4,6 @@ import {playlistDL} from "./src/playlist";
 import * as readline from "node:readline";
 import ytdl from "@distube/ytdl-core";
 import fs from "node:fs";
-import * as url from "node:url";
 
 const sleep = (sec: number) => {
   return new Promise(resolve => setTimeout(resolve, sec *1000));
@@ -37,6 +36,5 @@ const main = async () => {
     }
   }
   // End Playlist download code
-
 }
 main()
